@@ -37,13 +37,13 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <input type="button" value="Apagar" onclick="btnApagar()">
+                    <input type="button" value="Cadastrar" onclick="btnCadastrar()">
                     <input type="button" value="Entrar" onclick="btnSubmit()">
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <input type="button" value="Cadastrar" onclick="btnCadastrar()">
+                    <input type="button" value="Apagar" onclick="btnApagar()">
                 </td>
             </tr>
             <tr>
