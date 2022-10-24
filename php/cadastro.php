@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/cadastro.css">
+  <script src="script/cadastro.js"></script>
   <title>areaDeCadastro</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
       Senha: <input type="password" id='senha' placeholder='Crie sua senha' required><br><br>
       Genero: <br>
       F  <input type="radio" name="genero" id="fem" value="fem" required> M  <input type="radio" name="genero" id="masc" value="masc" required><br>
-      <input type="submit" value="Criar perfil" id='submit'>
+      <input type="submit" value="Criar perfil" id='submit' onclick="btnSubmit()">
     </div>
   </form>  
 
