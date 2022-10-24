@@ -26,7 +26,7 @@
 <body>
     <h1>FrAcademy</h1>
     <form action="" id="form" method="POST">
-        <table>
+        <table align='center'>
             <tr>
                 <td>Login:</td>
                 <td><input type="text" id="login" name="login"></td>
