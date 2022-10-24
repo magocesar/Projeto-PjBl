@@ -47,13 +47,9 @@
                 </td>
             </tr>
             <tr>
-                <td colspan="2" id="ErroJavascript">
-                    Erro Javascript
-                </td>
-            </tr>
-            <tr>
                 <td colspan="2">
-                    <?=$msgServer?>
+                    <div><?=$msgServer?>Erro PHP</div>
+                    <div>Erro Javascript</div>
                 </td>
             </tr>
         </table>
