@@ -24,7 +24,7 @@
     <script src="script/login.js"></script>
 </head>
 <body>
-    <h1>FrAcademy</h1>
+    <h1>Bem Vindo ao FrAcademy</h1>
     <form action="" id="form" method="POST">
         <table>
             <tr>
@@ -33,7 +33,7 @@
             </tr>
             <tr>
                 <td>Senha:</td>
-                <td><input type="password" id="senha" name="senha"></td>
+                <td><input type="password" id="password" name="senha"></td>
             </tr>
             <tr>
                 <td colspan="2">
@@ -48,11 +48,63 @@
             </tr>
             <tr>
                 <td colspan="2">
-                    <div><?=$msgServer?>Erro PHP</div>
-                    <div>Erro Javascript</div>
+                    <?=$msgServer?>
+                    <div id="errorJs"></div>
                 </td>
             </tr>
         </table>
     </form>
+    <script>
+        const login = document.getElementById('login').value
+        const password = document.getElementById('password').value
+        const msg = document.getElementById('errorJs')
+
+        function btnApagar(){
+            document.getElementById('login').value = document.getElementById('password').value = ''
+        }
+
+        function btnCadastrar(){
+            window.location.assign('cadastro.php')
+        }
+
+        function btnSubmit(){
+            if(verificar()){
+                document.getElementById('form').submit()
+            }
+        }
+
+        function verificar(){
+            const login = document.getElementById('login').value
+            const password = document.getElementById('password').value
+
+            if (login.length > 32 ){
+                msg.innerHTML = 'O campo "Login" não pode conter mais do que 32 caracteres.'
+                login.focus()
+                return false
+            }
+
+            if (login == ''){
+                msg.innerHTML = 'O Campo "Login" está vazio.'
+                login.focus()
+                return false
+            }
+
+            if (password.length > 32){
+                msg.innerHTML = 'O campo "Senha" não pode conter mais do que 32 caracteres.'
+                password.focus()
+                return false
+            }
+
+            if (password == ''){
+                msg.innerHTML = 'O campo "Senha" não podem estar vazio.'
+                password.focus()
+                return false
+            }
+
+            msg.innerHTML = ''
+            return true
+
+        }
+    </script>
 </body>
 </html>
