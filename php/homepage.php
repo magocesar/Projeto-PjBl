@@ -38,21 +38,17 @@
   <div class="app-content">
     <div class="projects-section">
       <div class="projects-section-header">
-        <p>Cursos</p>
+        <p>Meus Cursos</p>
       </div>
       <div class="projects-section-line">
         <div class="projects-status">
           <div class="item-status">
             <span class="status-number">6</span>
-            <span class="status-type">In Progress</span>
+            <span class="status-type">Cursando</span>
           </div>
           <div class="item-status">
             <span class="status-number">0</span>
-            <span class="status-type">Upcoming</span>
-          </div>
-          <div class="item-status">
-            <span class="status-number">6</span>
-            <span class="status-type">Total Projects</span>
+            <span class="status-type">Finalizados</span>
           </div>
         </div>
       </div>
