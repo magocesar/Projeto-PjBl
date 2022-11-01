@@ -38,8 +38,7 @@
   <div class="app-content">
     <div class="projects-section">
       <div class="projects-section-header">
-        <p>Projects</p>
-        <p class="time">November, 1</p>
+        <p>Cursos</p>
       </div>
       <div class="projects-section-line">
         <div class="projects-status">
@@ -61,7 +60,7 @@
         <div class="project-box-wrapper">
           <div class="project-box" style="background-color: #fee4cb;">
             <div class="project-box-header">
-              <span>November, 1, 2022</span>
+              <span></span>
               <div class="more-wrapper">
                 <button class="project-btn-more">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
@@ -87,7 +86,7 @@
     <div class="project-box-wrapper">
       <div class="project-box" style="background-color: #e9e7fd;">
         <div class="project-box-header">
-          <span>December 10, 2020</span>
+          <span></span>
           <div class="more-wrapper">
             <button class="project-btn-more">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
@@ -113,7 +112,7 @@
     <div class="project-box-wrapper">
       <div class="project-box">
         <div class="project-box-header">
-          <span>December 10, 2020</span>
+          <span></span>
           <div class="more-wrapper">
             <button class="project-btn-more">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
@@ -139,7 +138,7 @@
     <div class="project-box-wrapper">
       <div class="project-box" style="background-color: #ffd3e2;">
         <div class="project-box-header">
-          <span>December 10, 2020</span>
+          <span></span>
           <div class="more-wrapper">
             <button class="project-btn-more">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
@@ -165,7 +164,7 @@
     <div class="project-box-wrapper">
       <div class="project-box" style="background-color: #c8f7dc;">
         <div class="project-box-header">
-          <span>December 10, 2020</span>
+          <span></span>
           <div class="more-wrapper">
             <button class="project-btn-more">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
@@ -191,7 +190,7 @@
     <div class="project-box-wrapper">
       <div class="project-box" style="background-color: #d5deff;">
         <div class="project-box-header">
-          <span>December 10, 2020</span>
+          <span></span>
           <div class="more-wrapper">
             <button class="project-btn-more">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
