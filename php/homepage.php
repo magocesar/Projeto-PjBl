@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HomePage</title>
-  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/homepage.css">
   <script src="homepage.js"></script>
 </head>
 <body>
@@ -35,6 +35,7 @@
       </button>
     </div>
   </div>
+  
   <div class="app-content">
     <div class="projects-section">
       <div class="projects-section-header">
@@ -52,6 +53,7 @@
           </div>
         </div>
       </div>
+      
       <div class="project-boxes jsGridView">
         <div class="project-box-wrapper">
           <div class="project-box" style="background-color: #fee4cb;">
@@ -79,6 +81,7 @@
         </div>
       </div>
     </div>
+
     <div class="project-box-wrapper">
       <div class="project-box" style="background-color: #e9e7fd;">
         <div class="project-box-header">
@@ -105,6 +108,7 @@
         </div>
       </div>
     </div>
+
     <div class="project-box-wrapper">
       <div class="project-box">
         <div class="project-box-header">
@@ -131,6 +135,7 @@
         </div>
       </div>
     </div>
+
     <div class="project-box-wrapper">
       <div class="project-box" style="background-color: #ffd3e2;">
         <div class="project-box-header">

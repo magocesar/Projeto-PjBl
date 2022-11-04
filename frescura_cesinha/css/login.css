@@ -1,0 +1,81 @@
+header{
+    background-color: rgb(194, 188, 188);
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+}
+
+header > div > h1{
+    font-size: 30px;
+}
+
+header > div > img{
+    height: 72px;
+    width: 72px;
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+.container {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    width: 300px;
+    height: 280px;
+    background: rgb(194, 188, 188);
+    border-radius: 20px;
+}
+
+table{
+    margin: auto;
+    padding: 10px;
+}
+
+h3{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+td{
+    padding-bottom: 10px;
+}
+
+a{
+    color: blue;
+}
+
+.buttonsRow{
+    text-align: center;
+}
+
+.errorRow{
+    text-align: center;
+    color: red;
+    font: bold;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    }
+
+
+
+body{
+    overflow: hidden;
+}
+
+.footerMsg{
+    padding-top: 35px;
+    float: under;
+    background-color: rgb(194, 188, 188);
+    text-align: center;
+    width: 100vw;
+    height: 10vh;
+}
