@@ -49,6 +49,14 @@
                     <td><input type="password" placeholder="Confirme a senha" id="senha2"></td>
                 </tr>
                 <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="radio" name="option">
+                        Aluno
+                        <input type="radio" name="option">
+                        Professor
+                    </td>
+                </tr>
+                <tr>
                     <td colspan="2" class="buttonsRow">
                         <input type="button" value="Apagar" onclick="btnApagar()">
                         <input type="button" value="Cadastrar" onclick="btnSubmit()">
