@@ -44,13 +44,22 @@ body{
     justify-content: center;
 }
 
-.curso{
-    height: 200px;
-    width: 300px;
-    border: 1px solid red;
-    float: left;
-    margin: 15px;
+.fotoUsuario{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 100%;
+}
 
+.centerRow{
+    text-align: center;
+    margin: 5px;
+}
+
+.button{
+    width: 10vw;
+    padding: 10px;
+    margin: 10px;
 }
 
 .sideImg{

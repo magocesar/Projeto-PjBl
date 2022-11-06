@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,27 +13,27 @@
             <table>
                 <tr>
                     <td>
-                        <img src="imagens/logo_frAcademy.jpeg" alt="" class="logoFrAcademy">
+                        <a href="homepage.php"><img src="imagens/logo_frAcademy.jpeg" alt="" class="logoFrAcademy"></a>
+                        <hr>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="button" value="Conta" class="sideButton">
+                        <a href="conta.php"><img src="imagens/default_user.png" alt="foto_default" class="sideImg"></a>
+                        <br>
+                        Minha Conta
+                        <hr>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input type="button" value="Meus Cursos" class="sideButton">
+                    <a href="homepage.php"><img src="imagens/livro_modelo.png" alt="" class="sideImg"></a>
+                    <hr>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <input type="button" value="Área do Professor" class="sideButton">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <input type="button" value="Easter Egg" class="sideButton">
                     </td>
                 </tr>
             </table>
@@ -118,5 +118,6 @@
         </div>
         </div>
     </div>
+    <script src="script/homepage.js"></script>
 </body>
 </html>
