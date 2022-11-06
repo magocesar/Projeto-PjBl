@@ -27,7 +27,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="homepage.php"><img src="imagens/livro_modelo.png" alt="" class="sideImg"></a>
+                        <a href="homepage.php"><img src="imagens/foto_livro.png" alt="" class="sideImg"></a>
                         <hr>
                     </td>
                 </tr>
