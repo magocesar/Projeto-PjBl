@@ -28,6 +28,8 @@
                 <tr>
                     <td>
                     <a href="homepage.php"><img src="imagens/foto_livro.png" alt="" class="sideImg"></a>
+                    <br>
+                    Meus Cursos
                     <hr>
                     </td>
                 </tr>
