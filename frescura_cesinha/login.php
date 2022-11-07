@@ -38,22 +38,21 @@
                 <table>
                     <tr>
                         <td>Login: </td>
-                        <td><input type="text" placeholder="Digite o login" id="login"></td>
+                        <td><input type="text" placeholder="Digite o login" id="login" required></td>
                     </tr>
                     <tr>
                         <td>Senha: </td>
-                        <td><input type="password" placeholder="Digite a senha" id="senha"></td>
+                        <td><input type="password" placeholder="Digite a senha" id="senha" required></td>
                     </tr>
                     <tr>
                         <td colspan="2" class="buttonsRow">
                             <input type="button" value="Apagar" onclick="btnApagar()">
-                            <input type="button" value="Entrar" onclick="btnSubmit()">
+                            <input type="submit" value="Entrar" >
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2" class="errorRow">
                             <div><?=$msgError?></div>
-                            <div id="errorJs"></div>
                         </td>
                     </tr>
                 </table>
