@@ -44,9 +44,17 @@
             <h1>Editar Perfil</h1>
             <hr>
         </div>
+        <form action="" method='POST' class='formNewProfile'>
         <div class="main">
-
+            Alterar Login: 
+            <input type="text" class='newName' placeholder='Digite um novo login'> <br> <br>
+            Alterar senha: 
+            <input type="password" name="newPassword" id="newPassword" placeholder='Digite a nova senha'> <br> <br>
+            Confirme sua senha: 
+            <input type="password" name="newPassword" id="newPassword1" placeholder='Confirme sua senha: '> <br> <br>
+            <input type="submit" value="Alterar" id='btnSubmit'>
         </div>
+        </form>
         </div>
     </div>
     <script src="script/homepage.js"></script>

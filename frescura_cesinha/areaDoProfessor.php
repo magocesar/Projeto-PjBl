@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="css/homepage.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>uploadArea</title>
+  <link rel="stylesheet" href="css/areaDoProfessor.css">
 </head>
 <body>
-    <div class="container">
+<div class="container">
         <div class="sideMenu">
             <table>
                 <tr>
@@ -40,17 +40,20 @@
                 </tr>
             </table>
         </div>
-        <div class="header">
-            <h1>Meus Cursos</h1>
-            <hr>
+        <div class='header'>
+          <h1>Novos cursos</h1>
+          <hr>
         </div>
-        <div class="main">
-            <div class="curso" id="curso">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis pariatur eum veniam minus eos sequi, repellendus earum explicabo? Excepturi fugiat adipisci dolor ipsum explicabo laudantium eos provident consequatur eum quia.
-            </div>
-        </div>
-        </div>
-    </div>
-    <script src="script/homepage.js"></script>
+        <form action="" method='POST' class='new'>
+          <div class='main'>
+          Titulo:
+          <input type="text" id='title' placeholder='Adicione um titulo'> <br><br>
+          Arquivo: 
+          <input type="file" name="file" id="file"> <br><br>
+          <textarea name="description" id="description" cols="20" rows="10" placeholder='Insira uma descricao'></textarea><br><br>
+          <input type="submit" value="Criar curso">
+
+        </form>
+          </div>
 </body>
 </html>
