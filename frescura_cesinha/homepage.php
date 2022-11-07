@@ -47,6 +47,7 @@
                     <td>
                         <input type="button" value="Área do Professor" class="sideButton" onclick='upload()'>
                     </td>
+                    
                 </tr>
                 <tr>
                   <td>
