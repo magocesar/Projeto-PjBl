@@ -49,7 +49,7 @@
             </table>
         </div>
         <div class="header">
-            <h1>Meus Cursos</h1>
+            <h1>Cursos diversos</h1>
             <hr>
         </div>
         <div class="main">
@@ -59,7 +59,7 @@
         </div>
         </div>
     </div>
-    <script src="script/homepage.js"></script>  
+    <script src="script/areaDeBusca.js"></script>  
 
 </body>
 </html>
