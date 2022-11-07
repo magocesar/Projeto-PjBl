@@ -5,11 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>areaDeBusca</title>
-  <link rel="stylesheet" href="css/areaDeBusca.css">
+  <link rel="stylesheet" href="css/homepage.css">
 </head>
 <body>
 <div class="container">
-        <div class="sideMenu">
+<div class="sideMenu">
             <table>
                 <tr>
                     <td>
@@ -35,7 +35,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="button" value="Área do Professor" class="sideButton" onclick='upload()'>
+                        <input type="button" value="Área do Professor" class="sideButton">
                         <br>
                         <hr>
                     </td>
