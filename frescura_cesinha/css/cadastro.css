@@ -6,7 +6,6 @@ header{
 
 header > div > h1{
     font-size: 30px;
-    margin-left: 660px;
 }
 
 header > div > img{
@@ -88,4 +87,9 @@ body{
 .date{
     text-align: center;
     margin-left: 5px;
+}
+
+.msgCadastroRow{
+    text-align: center;
+    font: bold;
 }

@@ -7,6 +7,12 @@
         $msgError = $_POST['msgServer'];
     }
 
+    if(!isset($_POST['msgCadastro'])){
+        $msgCadastro = '';
+    }else{
+        $msgCadastro = $_POST['msgCadastro'];
+    }
+
 ?>
 
 
@@ -34,15 +40,23 @@
     <div class="container">
         <div class="box">
             <h3>Login</h3>
-            <form action="#" class="form" method="POST" id="form">
+            <form action="login_php.php" class="form" method="POST" id="form">
                 <table>
                     <tr>
                         <td>Login: </td>
-                        <td><input type="text" placeholder="Digite o login" id="login" required></td>
+                        <td><input type="text" placeholder="Digite o login" id="login" required name="login"></td>
                     </tr>
                     <tr>
                         <td>Senha: </td>
-                        <td><input type="password" placeholder="Digite a senha" id="senha" required></td>
+                        <td><input type="password" placeholder="Digite a senha" id="senha" required name="senha"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="radio" value="aluno" name="type" required>
+                            Aluno
+                            <input type="radio" value="professor" name="type">
+                            Professor
+                        </td>
                     </tr>
                     <tr>
                         <td colspan="2" class="buttonsRow">
@@ -51,8 +65,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2" class="errorRow">
-                            <div><?=$msgError?></div>
+                        <td colspan="2">
+                            <div class="errorRow"><?=$msgError?></div>
+                            <div class="msgCadastroRow"><?=$msgCadastro?></div>
                         </td>
                     </tr>
                 </table>

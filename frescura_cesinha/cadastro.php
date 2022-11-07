@@ -34,33 +34,29 @@
 <div class="container">
     <div class="box">
         <h3>Crie sua Conta</h3>
-        <form action="#" class="form" method="POST" id="form">
+        <form action="cadastro_php.php" class="form" method="POST" id="form">
             <table>
                 <tr>
+                    <td class="inputEspec">Nome: </td>
+                    <td><input type="text" placeholder="Digite o seu Nome" id="nome" required name="nome"></td>
+                </tr>
+                <tr>
                     <td class="inputEspec">Login: </td>
-                    <td><input type="text" placeholder="Digite o login" id="login" required></td>
-                </tr>
-                <tr>
-                    <td class="inputEspec"class="inputEspec">Data de Nascimento: </td>
-                    <td><input type="date" id="date" required></td>
-                </tr>
-                <tr>
-                    <td class="inputEspec">CPF (Não Obrigatório): </td>
-                    <td class="date"><input type="text" placeholder="Digite o CPF" id="login"></td>
+                    <td><input type="text" placeholder="Digite o login" id="login" required name="login"></td>
                 </tr>
                 <tr>
                     <td class="inputEspec">Senha: </td>
-                    <td><input type="password" placeholder="Digite a senha" id="senha1" required></td>
+                    <td><input type="password" placeholder="Digite a senha" id="senha1" required name="senha1"></td>
                 </tr>
                 <tr>
                     <td class="inputEspec"class="inputEspec">Confirme a Senha: </td>
-                    <td><input type="password" placeholder="Confirme a senha" id="senha2" required></td>
+                    <td><input type="password" placeholder="Confirme a senha" id="senha2" required name="senha2"></td>
                 </tr>
                 <tr>
                     <td colspan="2" style="text-align: center;">
-                        <input type="radio" name="option" checked>
+                        <input type="radio" name="option" value="aluno" required>
                         Aluno
-                        <input type="radio" name="option">
+                        <input type="radio" name="option" value="professor">
                         Professor
                     </td>
                 </tr>
