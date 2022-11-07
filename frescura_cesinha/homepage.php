@@ -1,3 +1,13 @@
+
+<?php
+    session_start();
+
+    if(!isset($_SESSION['nome'])){
+        header("Location: login.php");
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -38,6 +48,7 @@
                         <input type="button" value="Área do Professor" class="sideButton" onclick='upload()'>
                         <hr>
                     </td>
+                    
                 </tr>
                 <tr>
                   <td>
@@ -53,7 +64,7 @@
         </div>
         <div class="main">
             <div class="curso" id="curso">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis pariatur eum veniam minus eos sequi, repellendus earum explicabo? Excepturi fugiat adipisci dolor ipsum explicabo laudantium eos provident consequatur eum quia.
+                <?=$_SESSION['nome'] . $_SESSION['login']?>
             </div>
         </div>
         </div>
