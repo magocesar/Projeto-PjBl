@@ -48,6 +48,12 @@
                         <input type="button" value="Área do Professor" class="sideButton">
                     </td>
                 </tr>
+                <tr>
+                  <td>
+                    <a href="areaDeBusca.php"><img src="imagens/foto_livro1.png" alt="" class=sideImg></a> <br>
+                    Busca
+                  </td>
+                </tr>
             </table>
         </div>
         <div class="header">
@@ -57,11 +63,11 @@
         <form action="" method='POST' class='formNewProfile'>
         <div class="main">
             Alterar Login: 
-            <input type="text" class='newName' placeholder='Digite um novo login'> <br> <br>
+            <input type="text" class='newName' placeholder='Digite um novo login'required> <br> <br>
             Alterar senha: 
-            <input type="password" name="newPassword" id="newPassword" placeholder='Digite a nova senha'> <br> <br>
+            <input type="password" name="newPassword" id="newPassword" placeholder='Digite a nova senha'required> <br> <br>
             Confirme sua senha: 
-            <input type="password" name="newPassword" id="newPassword1" placeholder='Confirme sua senha: '> <br> <br>
+            <input type="password" name="newPassword" id="newPassword1" placeholder='Confirme sua senha: ' required> <br> <br>
             <input type="submit" value="Alterar" id='btnSubmit'>
         </div>
         </form>

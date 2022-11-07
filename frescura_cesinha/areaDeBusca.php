@@ -1,24 +1,14 @@
-
-<?php
-    session_start();
-
-    if(!isset($_SESSION['nome'])){
-        header("Location: login.php");
-    }
-?>
-
-
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Conta</title>
-    <link rel="stylesheet" href="css/conta.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>areaDeBusca</title>
+  <link rel="stylesheet" href="css/areaDeBusca.css">
 </head>
 <body>
-    <div class="container">
+<div class="container">
         <div class="sideMenu">
             <table>
                 <tr>
@@ -45,7 +35,9 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="button" value="Área do Professor" class="sideButton">
+                        <input type="button" value="Área do Professor" class="sideButton" onclick='upload()'>
+                        <br>
+                        <hr>
                     </td>
                 </tr>
                 <tr>
@@ -57,23 +49,17 @@
             </table>
         </div>
         <div class="header">
-            <h1>Minha Conta</h1>
+            <h1>Meus Cursos</h1>
             <hr>
         </div>
         <div class="main">
-            <div class="centerRow">
-                <img src="imagens/default_user.png" alt="foto_usuario" class="fotoUsuario">
-            </div>
-            <div class="centerRow"><?=$_SESSION['nome']?></div>
-            <div class="centerRow">Dados Usuário</div>
-            <div class="centerRow">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate voluptates et soluta neque deserunt nobis, quidem vitae commodi laudantium cupiditate corporis quae, iusto recusandae rem velit aliquid rerum. Consequatur, vitae.</div>
-            <div class="centerRow">
-                <input type="button" value="Editar Perfil" class="button" onclick="editarBtn()">
-                <input type="button" value="Sair da Sessão" class="button" onclick="encerrarBtn()">
+            <div class="curso" id="curso">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis pariatur eum veniam minus eos sequi, repellendus earum explicabo? Excepturi fugiat adipisci dolor ipsum explicabo laudantium eos provident consequatur eum quia.
             </div>
         </div>
         </div>
     </div>
-    <script src="script/conta.js"></script>
+    <script src="script/homepage.js"></script>  
+
 </body>
 </html>
