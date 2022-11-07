@@ -38,6 +38,12 @@
                         <input type="button" value="Área do Professor" class="sideButton">
                     </td>
                 </tr>
+                <tr>
+                  <td>
+                    <a href="areaDeBusca.php"><img src="imagens/foto_livro1.png" alt="" class=sideImg></a> <br>
+                    Busca
+                  </td>
+                </tr>
             </table>
         </div>
         <div class="header">

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Perfil</title>
-    <link rel="stylesheet" href="css/editarPerfil.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>areaDeBusca</title>
+  <link rel="stylesheet" href="css/areaDeBusca.css">
 </head>
 <body>
-    <div class="container">
+<div class="container">
         <div class="sideMenu">
             <table>
                 <tr>
@@ -35,7 +35,9 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="button" value="Área do Professor" class="sideButton">
+                        <input type="button" value="Área do Professor" class="sideButton" onclick='upload()'>
+                        <br>
+                        <hr>
                     </td>
                 </tr>
                 <tr>
@@ -47,22 +49,17 @@
             </table>
         </div>
         <div class="header">
-            <h1>Editar Perfil</h1>
+            <h1>Meus Cursos</h1>
             <hr>
         </div>
-        <form action="" method='POST' class='formNewProfile'>
         <div class="main">
-            Alterar Login: 
-            <input type="text" class='newName' placeholder='Digite um novo login'required> <br> <br>
-            Alterar senha: 
-            <input type="password" name="newPassword" id="newPassword" placeholder='Digite a nova senha'required> <br> <br>
-            Confirme sua senha: 
-            <input type="password" name="newPassword" id="newPassword1" placeholder='Confirme sua senha: ' required> <br> <br>
-            <input type="submit" value="Alterar" id='btnSubmit'>
+            <div class="curso" id="curso">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis pariatur eum veniam minus eos sequi, repellendus earum explicabo? Excepturi fugiat adipisci dolor ipsum explicabo laudantium eos provident consequatur eum quia.
+            </div>
         </div>
-        </form>
         </div>
     </div>
-    <script src="script/homepage.js"></script>
+    <script src="script/homepage.js"></script>  
+
 </body>
 </html>
