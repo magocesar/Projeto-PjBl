@@ -27,7 +27,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a href="homepage.php"><img src="imagens/foto_livro.png" alt="" class="sideImg"></a>
+                        <a href="homepage.php"><img src="imagens/foto_livro1.png" alt="" class="sideImg"></a>
                         <br>
                         Meus Cursos
                         <hr>

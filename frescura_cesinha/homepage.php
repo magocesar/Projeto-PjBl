@@ -27,10 +27,10 @@
                 </tr>
                 <tr>
                     <td>
-                    <a href="homepage.php"><img src="imagens/foto_livro.png" alt="" class="sideImg"></a>
-                    <br>
-                    Meus Cursos
-                    <hr>
+                        <a href="homepage.php"><img src="imagens/foto_livro1.png" alt="" class="sideImg"></a>
+                        <br>
+                        Meus Cursos
+                        <hr>
                     </td>
                 </tr>
                 <tr>
@@ -45,77 +45,8 @@
             <hr>
         </div>
         <div class="main">
-            <div class="curso">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores sint quasi culpa ipsum maxime iusto hic, unde doloremque, est dolore ex. Vel corporis officia, ex quo laborum voluptates accusantium qui.
-            </div>
-            <div class="curso">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque provident cum quas commodi obcaecati accusamus, excepturi ratione voluptate animi laudantium repellat, magni doloribus iusto architecto molestiae dicta nobis possimus modi.
-            </div>
-            <div class="curso">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vitae laboriosam mollitia animi. Obcaecati necessitatibus quod dolorum! Fugiat, minus minima dolores repudiandae nulla ea deserunt quas cupiditate corporis quis aliquam!
-            </div>
-            <div class="curso">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque provident cum quas commodi obcaecati accusamus, excepturi ratione voluptate animi laudantium repellat, magni doloribus iusto architecto molestiae dicta nobis possimus modi.
-            </div>
-            <div class="curso">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vitae laboriosam mollitia animi. Obcaecati necessitatibus quod dolorum! Fugiat, minus minima dolores repudiandae nulla ea deserunt quas cupiditate corporis quis aliquam!
-            </div>
-            <div class="curso">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque provident cum quas commodi obcaecati accusamus, excepturi ratione voluptate animi laudantium repellat, magni doloribus iusto architecto molestiae dicta nobis possimus modi.
-            </div>
-            <div class="curso">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vitae laboriosam mollitia animi. Obcaecati necessitatibus quod dolorum! Fugiat, minus minima dolores repudiandae nulla ea deserunt quas cupiditate corporis quis aliquam!
-            </div>
-            <div class="curso">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque provident cum quas commodi obcaecati accusamus, excepturi ratione voluptate animi laudantium repellat, magni doloribus iusto architecto molestiae dicta nobis possimus modi.
-            </div>
-            <div class="curso">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vitae laboriosam mollitia animi. Obcaecati necessitatibus quod dolorum! Fugiat, minus minima dolores repudiandae nulla ea deserunt quas cupiditate corporis quis aliquam!
-            </div>
-            <div class="curso">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque provident cum quas commodi obcaecati accusamus, excepturi ratione voluptate animi laudantium repellat, magni doloribus iusto architecto molestiae dicta nobis possimus modi.
-            </div>
-            <div class="curso">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vitae laboriosam mollitia animi. Obcaecati necessitatibus quod dolorum! Fugiat, minus minima dolores repudiandae nulla ea deserunt quas cupiditate corporis quis aliquam!
-            </div>
-            <div class="curso">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque provident cum quas commodi obcaecati accusamus, excepturi ratione voluptate animi laudantium repellat, magni doloribus iusto architecto molestiae dicta nobis possimus modi.
-            </div>
-            <div class="curso">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vitae laboriosam mollitia animi. Obcaecati necessitatibus quod dolorum! Fugiat, minus minima dolores repudiandae nulla ea deserunt quas cupiditate corporis quis aliquam!
-            </div>
-            <div class="curso">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque provident cum quas commodi obcaecati accusamus, excepturi ratione voluptate animi laudantium repellat, magni doloribus iusto architecto molestiae dicta nobis possimus modi.
-            </div>
-            <div class="curso">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vitae laboriosam mollitia animi. Obcaecati necessitatibus quod dolorum! Fugiat, minus minima dolores repudiandae nulla ea deserunt quas cupiditate corporis quis aliquam!
-            </div>
-            <div class="curso">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque provident cum quas commodi obcaecati accusamus, excepturi ratione voluptate animi laudantium repellat, magni doloribus iusto architecto molestiae dicta nobis possimus modi.
-            </div>
-            <div class="curso">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vitae laboriosam mollitia animi. Obcaecati necessitatibus quod dolorum! Fugiat, minus minima dolores repudiandae nulla ea deserunt quas cupiditate corporis quis aliquam!
-            </div>
-            <div class="curso">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque provident cum quas commodi obcaecati accusamus, excepturi ratione voluptate animi laudantium repellat, magni doloribus iusto architecto molestiae dicta nobis possimus modi.
-            </div>
-            <div class="curso">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vitae laboriosam mollitia animi. Obcaecati necessitatibus quod dolorum! Fugiat, minus minima dolores repudiandae nulla ea deserunt quas cupiditate corporis quis aliquam!
-            </div>
-            <div class="curso">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque provident cum quas commodi obcaecati accusamus, excepturi ratione voluptate animi laudantium repellat, magni doloribus iusto architecto molestiae dicta nobis possimus modi.
-            </div>
-            <div class="curso">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vitae laboriosam mollitia animi. Obcaecati necessitatibus quod dolorum! Fugiat, minus minima dolores repudiandae nulla ea deserunt quas cupiditate corporis quis aliquam!
-            </div>
-            <div class="curso">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque provident cum quas commodi obcaecati accusamus, excepturi ratione voluptate animi laudantium repellat, magni doloribus iusto architecto molestiae dicta nobis possimus modi.
-            </div>
-            <div class="curso">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore vitae laboriosam mollitia animi. Obcaecati necessitatibus quod dolorum! Fugiat, minus minima dolores repudiandae nulla ea deserunt quas cupiditate corporis quis aliquam!
-            </div>
-            <div class="curso">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque provident cum quas commodi obcaecati accusamus, excepturi ratione voluptate animi laudantium repellat, magni doloribus iusto architecto molestiae dicta nobis possimus modi.
+            <div class="curso" id="curso">
+                
             </div>
         </div>
         </div>

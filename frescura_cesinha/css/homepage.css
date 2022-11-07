@@ -47,9 +47,10 @@ body{
 .curso{
     height: 200px;
     width: 300px;
-    border: 1px solid red;
+    border: 1px solid black;
     float: left;
     margin: 15px;
+    border-radius: 100%;
 
 }
 
