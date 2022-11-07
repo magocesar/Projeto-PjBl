@@ -46,7 +46,7 @@
         </div>
         <div class="main">
             <div class="curso" id="curso">
-                
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis pariatur eum veniam minus eos sequi, repellendus earum explicabo? Excepturi fugiat adipisci dolor ipsum explicabo laudantium eos provident consequatur eum quia.
             </div>
         </div>
         </div>
