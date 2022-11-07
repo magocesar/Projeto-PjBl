@@ -44,8 +44,10 @@
 
 
     function logar($login, $nome){
-        echo $login;
-        echo $nome;
+        session_start();
+        $_SESSION['login'] = $login;
+        $_SESSION['nome'] = $nome;
+        header("Location: homepage.php");
     }
 
     verificarTipo($login, $senha, $type, $conn);

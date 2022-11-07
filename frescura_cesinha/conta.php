@@ -1,3 +1,13 @@
+
+<?php
+    session_start();
+
+    if(!isset($_SESSION['nome'])){
+        header("Location: login.php");
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -48,12 +58,12 @@
             <div class="centerRow">
                 <img src="imagens/default_user.png" alt="foto_usuario" class="fotoUsuario">
             </div>
-            <div class="centerRow">Nome Usuário</div>
+            <div class="centerRow"><?=$_SESSION['nome']?></div>
             <div class="centerRow">Dados Usuário</div>
             <div class="centerRow">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate voluptates et soluta neque deserunt nobis, quidem vitae commodi laudantium cupiditate corporis quae, iusto recusandae rem velit aliquid rerum. Consequatur, vitae.</div>
             <div class="centerRow">
                 <input type="button" value="Editar Perfil" class="button" onclick="editarBtn()">
-                <input type="button" value="Sair da Sessão" class="button">
+                <input type="button" value="Sair da Sessão" class="button" onclick="encerrarBtn()">
             </div>
         </div>
         </div>
