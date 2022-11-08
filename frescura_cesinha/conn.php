@@ -1,8 +1,8 @@
 <?php
 
     $servername = '127.0.0.1';
-    $username = 'desenvolvedor';
-    $password = 'Bes@2022#';
+    $username = 'root';
+    $password = '';
     $dbname = 'fracademy';
 
     $conn = new mysqli($servername, $username, $password, $dbname); // OOP

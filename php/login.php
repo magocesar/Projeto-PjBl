@@ -10,11 +10,10 @@
     <link rel="stylesheet" href="css/login_cadastro.css">
 </head>
 <body class="align">
-
+  
   <div class="grid">
 
     <form action="https://httpbin.org/post" method="POST" class="form login">
-
       <div class="form__field">
         <label for="login__username"><svg class="icon">
             <use xlink:href="#icon-user"></use>

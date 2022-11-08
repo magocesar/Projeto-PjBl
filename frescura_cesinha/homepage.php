@@ -2,9 +2,9 @@
 <?php
     session_start();
 
-    //if(!isset($_SESSION['nome'])){
-    //    header("Location: login.php");
-    //}
+    if(!isset($_SESSION['nome'])){
+        header("Location: login.php");
+    }
 ?>
 
 
@@ -20,7 +20,7 @@
 <body>
     <div class="container">
     <div class="sideMenu">
-            <table>
+    <table>
                 <tr>
                     <td>
                         <a href="homepage.php"><img src="imagens/logo_frAcademy.jpeg" alt="" class="logoFrAcademy"></a>
@@ -45,16 +45,11 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="button" value="Área do Professor" class="sideButton">
+                    <a href="areaDeBusca.php"><img src="imagens/lupa.png" alt="" class='sideImg'></a>
                         <br>
+                        Busca
                         <hr>
                     </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="areaDeBusca.php"><img src="imagens/foto_livro1.png" alt="" class=sideImg></a> <br>
-                    Busca
-                  </td>
                 </tr>
             </table>
         </div>
