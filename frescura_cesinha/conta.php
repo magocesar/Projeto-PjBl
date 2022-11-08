@@ -46,6 +46,7 @@
                 <tr>
                     <td>
                         <input type="button" value="Área do Professor" class="sideButton">
+                        <br>
                         <hr>
                     </td>
                 </tr>

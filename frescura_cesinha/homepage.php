@@ -19,7 +19,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="sideMenu">
+    <div class="sideMenu">
             <table>
                 <tr>
                     <td>
@@ -45,10 +45,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <input type="button" value="Área do Professor" class="sideButton" onclick='upload()'>
+                        <input type="button" value="Área do Professor" class="sideButton">
+                        <br>
                         <hr>
                     </td>
-                    
                 </tr>
                 <tr>
                   <td>
