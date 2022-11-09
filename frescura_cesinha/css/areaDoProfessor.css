@@ -73,7 +73,7 @@ body{
   margin: 15px;
   border-radius: 10%;
   padding: 10px;
-  background-color: white;
+  background-color: #e0e0e0;
 
 }
 
@@ -95,16 +95,16 @@ body{
   margin: 10px;
 }
 
-.add-btn {
-  background-color: black;
-  color: #fff;
-  padding: 0;
-  border: 0;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 1000px;
+table{
+  text-align: center;
 }
+
+.titleCurso{
+  text-align: center;
+  padding-top: 80px;
+}
+
+a{
+  color: black;
+}
+
