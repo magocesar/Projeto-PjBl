@@ -5,6 +5,8 @@
     if(!isset($_SESSION['nome'])){
         header("Location: login.php");
     }
+
+    include('conn.php');
 ?>
 
 
@@ -58,9 +60,37 @@
             <hr>
         </div>
         <div class="main">
-            <div class="curso" id="curso">
-                <?=$_SESSION['nome'] . $_SESSION['login']?>
-            </div>
+
+            <!--Parte do Código PHP se o usuário logado for um professor -->
+
+            <?php if($_SESSION['id'] == 'professor'){ ?>
+                <div class="curso" id="curso">
+                    <div class="titleCurso"><a href="areaDoProfessor.php">Adicionar novo Curso</a></div>
+                </div>
+                <?php
+                    $id_user = $_SESSION['id_user'];
+                    $sql = "SELECT nome_curso, descricao_curso, materia_curso FROM cursos WHERE id_professor_curso = '$id_user';";
+                    $result = $conn->query($sql);
+                    if($result->num_rows > 0){
+                        while($row = $result->fetch_assoc()){ ?>
+                           <a href="">
+                               <div class="curso">
+                                    <div><?php  echo $row['nome_curso']?></div>
+                                    <div><?php echo $row['descricao_curso']?></div>
+                                    <div><?php echo $row['materia_curso']?></div>
+                               </div>
+                           </a>
+                    <?php
+                    }}else{ ?>
+                        
+                        <div class="curso">
+                            <div>Nenhum Curso Cadastrado!</div>
+                        </div>
+                    <?php }
+                ?>
+            <?php } ?>
+
+
         </div>
         </div>
     </div>
