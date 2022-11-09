@@ -9,7 +9,21 @@
     <title>Login</title>
     <link rel="stylesheet" href="css/login_cadastro.css">
 </head>
+
 <body class="align">
+
+
+<header class ="barra">
+  <div >
+        <img src="https://discord.com/channels/@me/802630231377575956/1039617793722699842" class="logo">
+  </div>
+
+  <div>
+    <h1 class="title"> FR Academy </h1>
+  </div>
+
+</header>
+
   
   <div class="grid">
 
@@ -18,14 +32,22 @@
         <label for="login__username"><svg class="icon">
             <use xlink:href="#icon-user"></use>
           </svg><span class="hidden">Username</span></label>
-        <input autocomplete="username" id="login__username" type="text" name="username" class="form__input" placeholder="Usuario" required>
+        <input autocomplete="username" id="login" type="text" name="username" class="form__input" placeholder="Usuario" required>
       </div>
 
       <div class="form__field">
         <label for="login__password"><svg class="icon">
             <use xlink:href="#icon-lock"></use>
           </svg><span class="hidden">Password</span></label>
-        <input id="login__password" type="password" name="password" class="form__input" placeholder="Senha" required>
+        <input id="senha" type="password" name="password" class="form__input" placeholder="Senha" required>
+      </div>
+
+      <div class="form__field">
+        <label for="user_type" id="radio_box">
+          <input type="radio" value="aluno" name="type" class="form_radio" required>
+          Aluno &emsp;&emsp;&emsp;&emsp;
+          <input type="radio" value="professor" name="type" class="form_radio">
+          Professor</span></label> 
       </div>
 
       <div class="form__field">

@@ -75,6 +75,7 @@ html {
   font-size: var(--htmlFontSize);
 }
 
+
 body {
   background-color: var(--bodyBackgroundColor);
   color: var(--bodyColor);
@@ -84,6 +85,28 @@ body {
   line-height: var(--bodyLineHeight);
   margin: 0;
   min-block-size: 100vh;
+}
+
+.barra {
+  background-color: #063146;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+}
+
+.logo {
+  height: 72px;
+  width: 72px;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.title {
+  margin-left: 665px;
+  color: #FFFFFF;
 }
 
 /* modules/anchor.css */
@@ -135,6 +158,12 @@ input[type="submit"] {
   inline-size: 100%;
 }
 
+label#radio_box {
+  padding-left: 63px;
+  padding-right: 63px;
+  border-radius: 4px;
+}
+
 .form__field {
   display: flex;
 }
@@ -142,6 +171,7 @@ input[type="submit"] {
 .form__input {
   flex: 1;
 }
+
 
 /* modules/login.css */
 
@@ -165,6 +195,7 @@ input[type="submit"] {
 
 .login label,
 .login input[type="text"],
+.login input[type="radio"],
 .login input[type="password"],
 .login input[type="submit"] {
   border-radius: var(--loginBorderRadus);
@@ -188,7 +219,9 @@ input[type="submit"] {
 .login input[type="password"]:focus,
 .login input[type="password"]:hover,
 .login input[type="text"]:focus,
-.login input[type="text"]:hover {
+.login input[type="text"]:hover,
+.login input[type="radio"]:focus,
+.login input[type="radio"]:hover {
   background-color: var(--loginInputHoverBackgroundColor);
 }
 
@@ -213,3 +246,4 @@ p {
 .text--center {
   text-align: center;
 }
+
