@@ -57,6 +57,9 @@
         </div>
         <div class="header">
             <h1>Meus Cursos</h1>
+
+            
+
             <hr>
         </div>
         <div class="main">
@@ -64,8 +67,15 @@
             <!--Parte do Código PHP se o usuário logado for um professor -->
 
             <?php if($_SESSION['id'] == 'professor'){ ?>
-                <div class="curso" id="curso">
-                    <div class="titleCurso"><a href="areaDoProfessor.php">Adicionar novo Curso</a></div>
+                <a href="novoCurso.php"><div class="curso" id="curso">
+                    <div class="titleCurso"><a href="novoCurso.php"> <button class="add-btn" title="Add New Project">
+                    <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+                    <line x1="12" y1="5" x2="12" y2="19" />
+                    <line x1="5" y1="12" x2="19" y2="12" /></svg>
+                    </button> 
+                </div>
+                </a>
+
                 </div>
                 <?php
                     $id_user = $_SESSION['id_user'];
