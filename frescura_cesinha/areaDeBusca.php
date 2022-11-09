@@ -1,3 +1,14 @@
+
+<?php
+    session_start();
+
+    if(!isset($_SESSION['nome'])){
+        header("Location: login.php");
+    }
+
+    include('conn.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,13 +55,27 @@
             </table>
         </div>
         <div class="header">
-            <h1>Cursos diversos</h1>
+            <h1>Cursos Disponiveis</h1>
             <hr>
         </div>
         <div class="main">
-            <div class="curso" id="curso">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis pariatur eum veniam minus eos sequi, repellendus earum explicabo? Excepturi fugiat adipisci dolor ipsum explicabo laudantium eos provident consequatur eum quia.
-            </div>
+            <?php
+                $sql = "SELECT id_curso ,nome_curso, materia_curso, descricao_curso, id_professor_curso FROM cursos;";
+                $result = $conn->query($sql);
+                if ($result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()) {
+                      ?><div class="curso">
+                            <div><?=$row['nome_curso']?></div>
+                            <div><?=$row['materia_curso']?></div>
+                            <div><?=$row['descricao_curso']?></div>
+                            <a href="curso.php?nome_curso=<?=$row['nome_curso']?>&id_curso=<?=$row['id_curso']?>">Visitar</a>
+                        </div><?php
+                    }
+                  } else {
+                    echo "0 results";
+                  }
+
+            ?>
         </div>
         </div>
     </div>

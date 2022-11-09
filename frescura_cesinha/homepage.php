@@ -57,9 +57,6 @@
         </div>
         <div class="header">
             <h1>Meus Cursos</h1>
-
-            
-
             <hr>
         </div>
         <div class="main">
@@ -67,15 +64,14 @@
             <!--Parte do Código PHP se o usuário logado for um professor -->
 
             <?php if($_SESSION['id'] == 'professor'){ ?>
-                <a href="novoCurso.php"><div class="curso" id="curso">
-                    <div class="titleCurso"><a href="novoCurso.php"> <button class="add-btn" title="Add New Project">
-                    <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
-                    <line x1="12" y1="5" x2="12" y2="19" />
-                    <line x1="5" y1="12" x2="19" y2="12" /></svg>
-                    </button> 
-                </div>
-                </a>
-
+                <div class="curso" id="curso">
+                    <a href="novoCurso.php">
+                        <div class="titleCurso">
+                            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus">
+                            <line x1="12" y1="5" x2="12" y2="19" />
+                            <line x1="5" y1="12" x2="19" y2="12" /></svg>
+                        </div>
+                    </a>
                 </div>
                 <?php
                     $id_user = $_SESSION['id_user'];
@@ -99,6 +95,34 @@
                 ?>
             <?php } ?>
 
+            <!-- PHP se o aluno Acessar -->
+
+            <?php
+                if($_SESSION['id'] == 'aluno'){
+                    $id_user = $_SESSION['id_user'];
+                    $sql = "SELECT curso FROM alunos_cursos WHERE aluno = $id_user";
+                    $result = $conn->query($sql);
+                    if ($result->num_rows > 0){
+                        while($row = $result->fetch_assoc()){
+                            $id = $row['curso'];
+                            $sql2 = "SELECT id_curso, nome_curso, materia_curso, descricao_curso FROM cursos WHERE id_curso = $id;";
+                            $result2 = $conn->query($sql2);
+                            if ($result->num_rows > 0){
+                                while($row2 = $result2->fetch_assoc()){
+                                    echo $row2['id_curso'];
+                                    echo $row2['nome_curso'];
+                                    echo $row2['materia_curso'];
+                                    echo $row2['descricao_curso'];
+                                }
+                            }else{
+                                echo "No results";
+                            }
+                        }
+                    }else{
+                        echo "No results";
+                    }
+                }
+            ?>
 
         </div>
         </div>

@@ -16,10 +16,12 @@ CREATE TABLE alunos_cursos (
 ALTER TABLE alunos_cursos ADD CONSTRAINT
 	FOREIGN KEY (aluno)
     REFERENCES alunos(id_aluno)
+    ON DELETE CASCADE
     
 ALTER TABLE alunos_cursos ADD CONSTRAINT
 	FOREIGN KEY (curso)
     REFERENCES cursos(id_curso)
+    ON DELETE CASCADE
 
 CREATE TABLE professores (
 	id_professor INT PRIMARY KEY AUTO_INCREMENT,
@@ -40,6 +42,7 @@ CREATE TABLE cursos (
 ALTER TABLE cursos ADD CONSTRAINT
 	FOREIGN KEY (id_professor_curso)
 	REFERENCES professores(id_professor)
+    ON DELETE CASCADE
     
 ALTER TABLE alunos
 	MODIFY COLUMN cod_aluno INT

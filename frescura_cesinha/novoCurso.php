@@ -5,6 +5,12 @@
        header("Location: login.php");
     }
 
+    if(!isset($_POST['msgServer'])){
+        $msgServer ='';
+    }else{
+        $msgServer = $_POST['msgServer'];
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -13,14 +19,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>uploadArea</title>
+  <title>Cadastrar novo curso</title>
   <link rel="stylesheet" href="css/areaDoProfessor.css">
   <script src="areaDoProfessor.js"></script>
 </head>
 <body>
-<div class="container">
-      <div class="sideMenu">
-      <table>
+    <div class="container">
+        <div class="sideMenu">
+        <table>
                 <tr>
                     <td>
                         <a href="homepage.php"><img src="imagens/logo_frAcademy.jpeg" alt="" class="logoFrAcademy"></a>
@@ -54,11 +60,11 @@
             </table>
         </div>
         <div class='header'>
-          <h1>Novos cursos</h1>
-          <hr>
+            <h1>Novos cursos</h1>
+            <hr>
         </div>
         <div class="main">
-            <form action="" id="form">
+            <form action="novoCurso_php.php" id="form" method="POST">
                 <table class="addCursoTable">
                     <tr>
                         <td class="tableTdName">Titulo:</td>
@@ -80,15 +86,15 @@
                             <input type="submit" value="Cadastrar Curso">
                         </td>
                     </tr>
+                    <tr>
+                        <td colspan="2">
+                            <div><?=$msgServer?></div>
+                        </td>
+                    </tr>
                 </table>
+                <input type="hidden" name="id_professor" value="<?=$_SESSION['id_user']?>">
             </form>
         </div>
-
-
-
-
-
-
-        </div>
+    </div>
 </body>
 </html>
