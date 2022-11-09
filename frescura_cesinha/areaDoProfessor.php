@@ -57,16 +57,38 @@
           <h1>Novos cursos</h1>
           <hr>
         </div>
-        <form action="" method='POST' class='new'>
-          <div class='main'>
-          Titulo:
-          <input type="text" id='title' placeholder='Adicione um titulo'> <br><br>
-          Arquivo: 
-          <input type="file" name="file" id="file"> <br><br>
-          <textarea name="description" id="description" cols="20" rows="10" placeholder='Insira uma descricao'></textarea><br><br>
-          <input type="submit" value="Criar curso">
+        <div class="main">
+            <form action="" id="form">
+                <table class="addCursoTable">
+                    <tr>
+                        <td class="tableTdName">Titulo:</td>
+                        <td><input type="text" placeholder="Digite um Titulo" name="titulo" required></td>
+                    </tr>
+                    <tr>
+                        <td class="tableTdName">Matéria:</td>
+                        <td><input type="text" placeholder="Digite a Matéria" name="materia" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="tableTdName">Descrição</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><textarea name="descricao" cols="30" rows="10" required placeholder="Digite uma descrição para o curso!"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="button" value="Apagar" onclick="reset()">
+                            <input type="submit" value="Cadastrar Curso">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
 
-        </form>
-          </div>
+
+
+
+
+
+        </div>
 </body>
 </html>

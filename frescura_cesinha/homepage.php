@@ -69,14 +69,13 @@
                 </div>
                 <?php
                     $id_user = $_SESSION['id_user'];
-                    $sql = "SELECT nome_curso, descricao_curso, materia_curso FROM cursos WHERE id_professor_curso = '$id_user';";
+                    $sql = "SELECT id_curso, nome_curso, descricao_curso, materia_curso FROM cursos WHERE id_professor_curso = '$id_user';";
                     $result = $conn->query($sql);
                     if($result->num_rows > 0){
                         while($row = $result->fetch_assoc()){ ?>
-                           <a href="">
+                           <a href="curso.php?nome_curso=<?php echo $row['nome_curso']; ?>&id_curso=<?php echo $row['id_curso'];?>">
                                <div class="curso">
                                     <div><?php  echo $row['nome_curso']?></div>
-                                    <div><?php echo $row['descricao_curso']?></div>
                                     <div><?php echo $row['materia_curso']?></div>
                                </div>
                            </a>
