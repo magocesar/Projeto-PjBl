@@ -11,15 +11,18 @@
 }
 
 .sideMenu{
-  width: 8.5vw;
-  height: 98vh;
-  position: fixed;
-  background-color: #87CEFA;
-  align-items: center;
+  height: 100%; 
+  width: 8.5vw; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background-color: #e0e0e0; 
+  overflow-x: hidden; 
+  padding-top: 20px;
   padding-right: 5px;
-  padding-left: 8.5px;
-  padding-top: 10px;
-  text-align: center;
+  align-content: center;
+  padding-left: 10px;
 }
 
 body{
@@ -60,4 +63,34 @@ body{
   height: 50px;
   width: 50px;
   text-align: center;
+}
+
+.curso{
+  height: 200px;
+  width: 300px;
+  border: 1px solid black;
+  float: left;
+  margin: 15px;
+  border-radius: 10%;
+  padding: 10px;
+  background-color: white;
+
+}
+
+.fotoUsuario{
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 100%;
+}
+
+.centerRow{
+  text-align: center;
+  margin: 5px;
+}
+
+.button{
+  width: 10vw;
+  padding: 10px;
+  margin: 10px;
 }
