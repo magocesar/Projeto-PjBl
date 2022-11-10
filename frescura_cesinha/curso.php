@@ -7,6 +7,21 @@
     }
 
     include('conn.php');
+
+    $id_curso = $_GET['id_curso'];
+    $nome_curso = $_GET['nome_curso'];
+    $id_user = $_SESSION['id_user'];
+
+    if($_SESSION['id'] == 'aluno'){
+        $sql = "SELECT aluno, curso FROM alunos_cursos WHERE aluno = $id_user AND curso = $id_curso;";
+        $result = $conn->query($sql);
+        if($result->num_rows > 0){
+            $log = TRUE;
+        }else{
+            $log = FALSE;
+        }
+    }
+
 ?>
 
 
@@ -16,7 +31,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title><?=$nome_curso?></title>
     <link rel="stylesheet" href="css/areaDoProfessor.css">
 </head>
 <body>
@@ -56,12 +71,47 @@
         </table>
     </div>
     <div class="header">
-        <h1><?php echo $_GET['nome_curso']?></h1>
-        <h1><?php echo $_GET['id_curso']?></h1>
+        <h1><?=$nome_curso?></h1>
+
+        <?php
+            if($log === FALSE){
+                ?>
+                <div>
+                    <form action="curso_php.php" method="POST" id="form">
+                        <input type="hidden" value="inscrever" name="op">
+                        <input type="hidden" value="<?=$id_curso?>" name="curso">
+                        <input type="hidden" value="<?=$id_user?>" name="user"> 
+                        <input type="submit" value="Inscrever">
+                    </form>
+                </div>
+                <?php
+            }else if($log === TRUE){
+                ?>
+                <div>
+                    <form action="curso_php.php" method="POST" id="form">
+                        <input type="hidden" value="cancelar" name="op">
+                        <input type="hidden" value="<?=$id_curso?>" name="curso">
+                        <input type="hidden" value="<?=$id_user?>" name="user">
+                        <input type="submit" value="Cancelar Inscrição">
+                    </form>
+                </div>
+                <?php
+            }
+        ?>
+
         <hr>
     </div>
     <div class="main">
-        Em Progresso!
+
+        <?php
+
+            $sql = "SELECT descricao_curso FROM cursos WHERE id_curso = '$id_curso';";
+            $result = $conn-> query($sql);
+            while($row = $result->fetch_assoc()){
+                ?><div><?=$row['descricao_curso']?></div><?php
+            }
+        ?>
+
     </div>
     </div>
     <script src="script/homepage.js"></script>

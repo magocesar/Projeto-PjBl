@@ -109,10 +109,12 @@
                             $result2 = $conn->query($sql2);
                             if ($result->num_rows > 0){
                                 while($row2 = $result2->fetch_assoc()){
-                                    echo $row2['id_curso'];
-                                    echo $row2['nome_curso'];
-                                    echo $row2['materia_curso'];
-                                    echo $row2['descricao_curso'];
+                                    ?><a href="curso.php?id_curso=<?=$row2['id_curso']?>&nome_curso=<?=$row2['nome_curso']?>&descricao_curso=<?=$row2['descricao_curso']?>">
+                                        <div class="curso">
+                                            <div><?=$row2['nome_curso']?></div>
+                                            <div><?=$row2['materia_curso']?></div>
+                                        </div>
+                                    </a><?php
                                 }
                             }else{
                                 echo "No results";
