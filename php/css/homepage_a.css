@@ -50,17 +50,16 @@ ul li:hover a{
     background-color: #063146;
     position: fixed;
     top: 0;
-    left: 250px;
     right: 0;
     height: 70px;
   }
 
-.box {
+  .box {
+    margin: 100px;
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    
     grid-template-columns: repeat(1, minmax(0, 1fr));
     max-width: 24rem; /* 384px */
-    margin-left: 270px;
 }
 
 /** grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 xl:max-w-6xl max-w-4xl **/
@@ -71,6 +70,7 @@ ul li:hover a{
     border-radius: 8px;
     padding: 4px;
     margin: 2px;
+    border-top: 150px;
 }
 
 .b {

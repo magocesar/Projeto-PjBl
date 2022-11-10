@@ -7,7 +7,7 @@
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
     <body>
-
+        <div class="barra"></div>
         <div class="sidebar">
             <header> FR Academy</header>
             <ul>
@@ -18,20 +18,20 @@
             </ul>
         </div>    
 
-        <div class="barra"></div>
+        
 
 <!-- Arrumar a pira do curso que fica escondida -->
 
         <div class="box">
 		<!-- Tile 1 -->
-		<div class="a">
-			<div class="b"></div>
-			<div class="c">
-				<h4>Curso</h4>
-				<p >Professor</p>
-				<a class="f" href="#">Click Here</a>
-			</div>
-		</div>
+            <div class="a">
+                <div class="b"></div>
+                <div class="c">
+                    <h4>Curso</h4>
+                    <p >Professor</p>
+                    <a class="f" href="#">Click Here</a>
+                </div>
+            </div>
 		
 	</div>
 	<!-- Component End  -->
