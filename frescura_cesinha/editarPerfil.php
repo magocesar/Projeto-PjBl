@@ -5,6 +5,14 @@
        header("Location: login.php");
     }
 
+    if(!isset($_POST['msgServer'])){
+        $msgServer = '';
+    }else{
+        $msgServer = $_POST['msgServer'];
+    }
+
+
+
 ?>
 
 
@@ -57,15 +65,19 @@
             <h1>Editar Perfil</h1>
             <hr>
         </div>
-        <form action="" method='POST' class='formNewProfile'>
+        <form action="editar_perfil_php.php" method='POST' class='formNewProfile'>
         <div class="main">
-            Alterar Login: 
-            <input type="text" class='newName' placeholder='Digite um novo login'required> <br> <br>
+            Alterar Nome: 
+            <input type="text" placeholder="Digite um novo Nome!" name="name">
+            Alterar Login:
+            <input type="text" class='newName' placeholder='Digite um novo login'required name="login"> <br> <br>
             Alterar senha: 
-            <input type="password" name="newPassword" id="newPassword" placeholder='Digite a nova senha'required> <br> <br>
+            <input type="password" name="newPassword1" id="newPassword" placeholder='Digite a nova senha'required> <br> <br>
             Confirme sua senha: 
-            <input type="password" name="newPassword" id="newPassword1" placeholder='Confirme sua senha: ' required> <br> <br>
+            <input type="password" name="newPassword2" id="newPassword1" placeholder='Confirme sua senha: ' required> <br> <br>
+            <input type="hidden" name="id" value="<?=$_SESSION['id']?>">
             <input type="submit" value="Alterar" id='btnSubmit'>
+            <div><?=$msgServer?></div>
         </div>
         </form>
         </div>

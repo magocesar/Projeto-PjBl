@@ -22,6 +22,16 @@
         }
     }
 
+    if($_SESSION['id'] == 'professor'){
+        $sql = "SELECT nome_curso, materia_curso, id_curso FROM cursos WHERE id_professor_curso = $id_user AND id_curso = $id_curso";
+        $result = $conn->query($sql);
+        if($result->num_rows > 0){
+            $log = TRUE;
+        }else{
+            $log = FALSE;
+        }
+    }
+
 ?>
 
 
@@ -74,28 +84,47 @@
         <h1><?=$nome_curso?></h1>
 
         <?php
-            if($log === FALSE){
-                ?>
-                <div>
-                    <form action="curso_php.php" method="POST" id="form">
-                        <input type="hidden" value="inscrever" name="op">
-                        <input type="hidden" value="<?=$id_curso?>" name="curso">
-                        <input type="hidden" value="<?=$id_user?>" name="user"> 
-                        <input type="submit" value="Inscrever">
-                    </form>
-                </div>
-                <?php
-            }else if($log === TRUE){
-                ?>
-                <div>
-                    <form action="curso_php.php" method="POST" id="form">
-                        <input type="hidden" value="cancelar" name="op">
-                        <input type="hidden" value="<?=$id_curso?>" name="curso">
-                        <input type="hidden" value="<?=$id_user?>" name="user">
-                        <input type="submit" value="Cancelar Inscrição">
-                    </form>
-                </div>
-                <?php
+
+            if($_SESSION['id'] == 'aluno'){
+                if($log === FALSE){
+                    ?>
+                    <div>
+                        <form action="curso_php.php" method="POST" id="form">
+                            <input type="hidden" value="inscrever" name="op">
+                            <input type="hidden" value="<?=$id_curso?>" name="curso">
+                            <input type="hidden" value="<?=$id_user?>" name="user"> 
+                            <input type="submit" value="Inscrever">
+                        </form>
+                    </div>
+                    <?php
+                }else if($log === TRUE){
+                    ?>
+                    <div>
+                        <form action="curso_php.php" method="POST" id="form">
+                            <input type="hidden" value="cancelar" name="op">
+                            <input type="hidden" value="<?=$id_curso?>" name="curso">
+                            <input type="hidden" value="<?=$id_user?>" name="user">
+                            <input type="submit" value="Cancelar Inscrição">
+                        </form>
+                    </div>
+                    <?php
+                }
+            }else if($_SESSION['id'] == 'professor'){
+                if($log === TRUE){
+                    ?>  <table>
+                            <form action="editar_curso.php" method="POST">
+                                <input type="hidden" name="op" value="editar_curso">
+                                <input type="hidden" value="<?=$id_curso?>" name="curso">
+                                <input type="submit" value="Editar Curso">
+                            </form>
+                            <form action="curso_php.php" method="POST">
+                                <input type="hidden" value="<?=$id_curso?>" name="curso">
+                                <input type="hidden" value="apagar_curso" name="op">
+                                <input type="submit" value="Apagar Curso">
+                            </form>
+                        </table>
+                    <?php
+                }
             }
         ?>
 
