@@ -80,7 +80,7 @@
                     <form action="curso_php.php" method="POST" id="form">
                         <input type="hidden" value="inscrever" name="op">
                         <input type="hidden" value="<?=$id_curso?>" name="curso">
-                        <input type="hidden" value="<?=$id_user?>" name="user">
+                        <input type="hidden" value="<?=$id_user?>" name="user"> 
                         <input type="submit" value="Inscrever">
                     </form>
                 </div>

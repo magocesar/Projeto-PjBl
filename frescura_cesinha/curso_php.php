@@ -23,7 +23,7 @@
 
     }
 
-    function inscreverAluno($id_user, $id_curso, $conn){
+    function inscreverAluno($id_user, $id_curso, $conn,){
         $sql = "INSERT INTO alunos_cursos (aluno, curso) VALUES ($id_user, $id_curso);";
         if($conn->query($sql) === TRUE){
             ?><script>
