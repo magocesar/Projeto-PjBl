@@ -68,7 +68,7 @@
         <form action="editar_perfil_php.php" method='POST' class='formNewProfile'>
         <div class="main">
             Alterar Nome: 
-            <input type="text" placeholder="Digite um novo Nome!" name="name">
+            <input type="text" placeholder="Digite um novo Nome!" name="name"> <br> <br>
             Alterar Login:
             <input type="text" class='newName' placeholder='Digite um novo login'required name="login"> <br> <br>
             Alterar senha: 
