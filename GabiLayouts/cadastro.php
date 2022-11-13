@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,26 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="css/login_cadastro.css">
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="login_cadastro.css">
 </head>
 
 <body class="align">
 
-
 <header class ="barra">
   
-
   <div>
     <h1 class="title"> FR Academy </h1>
   </div>
 
 </header>
 
-  
   <div class="grid">
-
     <form action="https://httpbin.org/post" method="POST" class="form login">
+
+      <div class="form__field">
+        <label for="login__username"><svg class="icon">
+            <use xlink:href="#icon-user"></use>
+          </svg><span class="hidden">Name</span></label>
+        <input autocomplete="name" id="nome" type="text" name="name" class="form__input" placeholder="Nome" required>
+      </div>
+
       <div class="form__field">
         <label for="login__username"><svg class="icon">
             <use xlink:href="#icon-user"></use>
@@ -37,24 +40,33 @@
         <label for="login__password"><svg class="icon">
             <use xlink:href="#icon-lock"></use>
           </svg><span class="hidden">Password</span></label>
-        <input id="senha" type="password" name="password" class="form__input" placeholder="Senha" required>
+        <input id="senha1" type="password" name="password" class="form__input" placeholder="Senha" required>
+      </div>
+
+      <div class="form__field">
+        <label for="login__password"><svg class="icon">
+            <use xlink:href="#icon-lock"></use>
+          </svg><span class="hidden">Password</span></label>
+        <input id="senha2" type="password" name="password" class="form__input" placeholder="Confirme a Senha" required>
       </div>
 
       <div class="form__field">
         <label for="user_type" id="radio_box">
           <input type="radio" value="aluno" name="type" class="form_radio" required>
-          Aluno &emsp;&emsp;&emsp;&emsp;
+          Aluno  &emsp;&emsp;&emsp;&emsp;
           <input type="radio" value="professor" name="type" class="form_radio">
-          Professor</span></label> 
+          Professor 
       </div>
 
       <div class="form__field">
-        <input type="submit" value="Entrar">
+        <input type="submit" value="Cadastrar">
       </div>
 
     </form>
 
-    <p class="text--center">Não possui conta?  <a href="cadastroblack.php">Cadastre-se agora</a onclick='btnCadastrar()'> <svg class="icon">
+    <p class="text--center"><svg class="icon">
+        <use xlink:href="#icon-arrow-right"></use>
+      </svg><a href="login.php"> Retornar a Tela de Login</a>
         <use xlink:href="#icon-arrow-right"></use>
       </svg></p>
 

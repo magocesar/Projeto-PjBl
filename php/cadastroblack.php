@@ -13,10 +13,7 @@
 <body class="align">
 
 <header class ="barra">
-  <div>
-        <img src="https://discord.com/channels/@me/802630231377575956/1039617793722699842" class="logo">
-  </div>
-
+  
   <div>
     <h1 class="title"> FR Academy </h1>
   </div>

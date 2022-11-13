@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>Side Menu Bar CSS</title>
-        <link rel="stylesheet" href="css/homepage_a.css">
+        <link rel="stylesheet" href="homepage_a_p.css">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     </head>
     <body>
+        <header class="barra">  </header>
 
         <div class="sidebar">
             <header> FR Academy</header>
@@ -19,24 +20,21 @@
         </div>    
 
         
+<!-- a classe 'box' define o cartaãozinho com o quadradinho e tal -->
 
-<!-- Arrumar a pira do curso que fica escondida -->
-
-        <div class="box">
-		<!-- Tile 1 -->
-            <div class="a">
-                <div class="b"></div>
-                <div class="c">
-                    <h4>Curso</h4>
-                    <p >Professor</p>
-                    <a class="f" href="#">Click Here</a>
-                </div>
-		</div>
-		
-	</div>
+        <!-- Box 1 (vazia) -->
+            <div class="box1">
+            
+                <div class="a">
+                    <div class="b"></div>
+                    <div class="c">
+                        <h4>Curso</h4>
+                        <p >Professor</p>
+                        <a class="f" href="#">Click Here</a>
+                    </div>
+            </div>
+            	
 	<!-- Component End  -->
-
-
 
     </body>
 </html>
