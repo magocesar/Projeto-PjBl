@@ -65,7 +65,6 @@
             </div>
             <div class="centerRow"><?=$_SESSION['nome']?></div>
             <div class="centerRow">Dados Usuário</div>
-            <div class="centerRow">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate voluptates et soluta neque deserunt nobis, quidem vitae commodi laudantium cupiditate corporis quae, iusto recusandae rem velit aliquid rerum. Consequatur, vitae.</div>
             <div class="centerRow">
                 <input type="button" value="Editar Perfil" class="button" onclick="editarBtn()">
                 <input type="button" value="Sair da Sessão" class="button" onclick="encerrarBtn()">
