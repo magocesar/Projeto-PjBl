@@ -71,6 +71,25 @@ ul li:hover a{
 
 /** grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-2 xl:max-w-6xl max-w-4xl **/
 
+.box2 {
+    margin-left: 450px;
+    display: grid;
+    margin-top: -145px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    max-width: 24rem; /* 384px */
+    height: 150px;
+}
+
+.box3 {
+    padding-left: 270px;
+    display: grid;
+    padding-top: 90px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    max-width: 24rem; /* 384px */
+    height: 150px;
+    width: 150px;
+}
+
 .a {
     display: flex;
     background: #D3D3D3;
@@ -116,26 +135,6 @@ p {
     text-align: center;
 }
 
-
-.box2 {
-    margin-left: 450px;
-    display: grid;
-    margin-top: -145px;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    max-width: 24rem; /* 384px */
-    height: 150px;
-}
-
-.box3 {
-    padding-left: 270px;
-    display: grid;
-    padding-top: 90px;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-    max-width: 24rem; /* 384px */
-    height: 150px;
-    width: 150px;
-}
-
 .g {
     display: flex;
     background: #D3D3D3;
@@ -153,4 +152,186 @@ h3 {
 
 .lado {
     display: inline-block;
+}
+
+
+/*pagina de cadastrar curso / editar perfil */
+
+.container {
+	width:1200px;
+    margin-left: 270px;
+	margin-top: 50px;
+	position:absolute;
+}
+
+#contact input[type="text"], #contact input[type="text"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+
+#contact {
+	background:#D3D3D3;
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #063146;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+    margin-bottom: 15px;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width: 1127px;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:300px;
+	max-width:100%;
+    resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#042331;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#063146;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+/*pagina perfil*/
+
+div.container {
+    width: 100%;
+    height: 100%;
+}
+
+
+div.posicao {
+    position: absolute;
+    top: 35%;
+    left: 58%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    z-index: 2;
+}
+
+div.circulo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #EEE;
+}
+
+div.circulo span img {
+    width: 100%;
+    border-radius: 50%;
+    opacity: 1;
+    cursor: pointer;
+    transition: linear 500ms;
+    -webkit-transition: linear 500ms;
+}
+
+div.circulo span img:hover {
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: linear 500ms;
+    -webkit-transition: linear 500ms;
+}
+
+.tituloperfil {
+    width: 1200px;
+    height: 300px;
+    margin-top: 25%;
+    margin-left: 270px;
+    position: absolute;
+    justify-content: center;
+}
+
+
+.tituloperfil h1{
+    font-family: 'Cabin', sans-serif;
+    font-weight: 700;
+    color:#444;
+    font-size:30px;
+    text-align:center;
+    margin-top:20px;
+}
+
+#buttons {
+    text-align: center;
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 42%;
+  }
+  
+/* start da css for da buttons */
+.btn {
+    width: 150px;
+    border-radius: 5px;
+    padding: 15px 25px;
+    font-size: 22px;
+    text-decoration: none;
+    margin: 20px;
+    color: #fff;
+    background-color: #042331;
+    position: relative;
+    display: inline-block;
+  }
+
+.btn:hover {
+    background-color: #063146;
 }
