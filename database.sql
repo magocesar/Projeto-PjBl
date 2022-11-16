@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS cursos (
 	id_curso INT(50) PRIMARY KEY AUTO_INCREMENT,
     nome_curso VARCHAR(50) NOT NULL,
     nome_autor VARCHAR(50) NOT NULL,
-    cpf_moderador VARCHAR(50) NOT NULL,
+    cpf_moderador VARCHAR(50),
     cnpj_instituicao VARCHAR(50) NOT NULL,
     cpf_professor VARCHAR(50) NOT NULL
 );
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS moderadores(
     nome_moderador VARCHAR(50) NOT NULL
 );
 
-CREATE TABLE instituicao(
+CREATE TABLE IF NOT EXISTS instituicao(
 	cnpj_instituicao VARCHAR(50) PRIMARY KEY,
     nome_instituicao VARCHAR(50) NOT NULL,
 	cidade_instituicao VARCHAR(50) NOT NULL,
