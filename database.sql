@@ -1,9 +1,9 @@
-CREATE SCHEMA `projeto_2`;
+CREATE SCHEMA IF NOT EXISTS `projeto_2`;
 
 USE projeto_2;
 
 
-CREATE TABLE cursos (
+CREATE TABLE IF NOT EXISTS cursos (
 	id_curso INT(50) PRIMARY KEY AUTO_INCREMENT,
     nome_curso VARCHAR(50) NOT NULL,
     nome_autor VARCHAR(50) NOT NULL,
@@ -18,13 +18,13 @@ CREATE TABLE estudante (
     data_nascimento_estudante DATE NOT NULL
 );
 
-CREATE TABLE modulos (
+CREATE TABLE IF NOT EXISTS modulos (
 	id_modulo INT PRIMARY KEY AUTO_INCREMENT,
 	nome_modulo VARCHAR(50) NOT NULL,
     nivel_dificuldade VARCHAR(50) NOT NULL
 );
 
-CREATE TABLE moderadores(
+CREATE TABLE IF NOT EXISTS moderadores(
 	cpf_moderador VARCHAR(50) PRIMARY KEY,
     data_nascimento_moderador DATE NOT NULL,
     nome_moderador VARCHAR(50) NOT NULL
@@ -38,19 +38,19 @@ CREATE TABLE instituicao(
     bairro_insituicao VARCHAR(45) NOT NULL
 );
 
-CREATE TABLE professores(
+CREATE TABLE IF NOT EXISTS professores(
 	cpf_professor VARCHAR(50) PRIMARY KEY,
     nome_professor VARCHAR(50) NOT NULL,
     data_nascimento_professor DATE NOT NULL
 );
 
-CREATE TABLE modulos_cursos(
+CREATE TABLE IF NOT EXISTS modulos_cursos(
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	modulo INT NOT NULL ,
     curso INT(50) NOT NULL
 );
 
-CREATE TABLE estudantes_cursos(
+CREATE TABLE IF NOT EXISTS estudantes_cursos(
 	id INT PRIMARY KEY AUTO_INCREMENT,
     curso INT(50) NOT NULL,
     cpf_estudante VARCHAR(50) NOT NULL,
@@ -162,21 +162,21 @@ INSERT INTO moderadores(cpf_moderador, data_nascimento_moderador, nome_moderador
 
 
 INSERT INTO instituicao(cnpj_instituicao, nome_instituicao,  cidade_instituicao, uf_instiuicao, bairro_insituicao) VALUES
-    ('66.840.482/0001-04', 'Pontifícia Universidade Catolica do Paraná', 'Curitiba', 'PR', 'Prado Velho'),
-    ('41.319.576/0001-01', 'Universidade Federal do Paraná', 'Curitiba', 'PR', 'Jardim Botânico'),
-    ('33.371.193/0001-46', 'Universidade Federal de Santa Catarina', 'Florienópolis', 'SC', 'Trindade'),
-    ('32.320.434/0001-65', 'Instituto Federal do Paraná', 'Curitiba', 'PR', 'Guabirotuba'),
-    ('32.321.434/0001-65', 'Universidade Positivo', 'Curitiba', 'PR', 'Ecoville'),
-    ('82.339.210/0001-73', 'Universidade Tecnológica Federal do Paraná', 'Curitiba', 'PR', 'Ecoville'),
-    ('23.342.543/0001-92', 'Colégio Bom Jesus São José', 'São Bento do Sul', 'SC', 'Centro'),
-    ('39.824.887/0001-78', 'Universidade  Univille SBS', 'São Bento do Sul', 'SC', 'Colonial'),
-    ('52.445.758/0001-37', 'Universidade Univille Joinville', 'Joinville', 'SC', 'Industrial Norte'),
-    ('21.797.339/0001-30', 'Univali', 'Itajaí', 'SC', 'Fazenda'),
-    ('47.017.145/0001-69', 'Colégio Global', 'São Bento do Sul', 'SC', 'Centro'),
-    ('67.278.491/0001-08', 'Curso Positivo', 'Curitiba', 'PR', 'Batel'),
-    ('03.854.285/0001-16', 'Instituto Federal de Santa Catarina', 'SC', 'Florienópolis', 'Centro'),
-    ('31.784.264/0001-07', 'Universidade do Constestado', 'Mafra', 'SC', 'Centro'),
-    ('31.785.264/0001-07', 'Unicesumar', 'Maringá', 'PR', 'Centro');
+	('66.840.482/0001-04', 'Pontifícia Universidade Catolica do Paraná', 'Curitiba', 'PR', 'Prado Velho'),
+	('41.319.576/0001-01', 'Universidade Federal do Paraná', 'Curitiba', 'PR', 'Jardim Botânico'),
+	('33.371.193/0001-46', 'Universidade Federal de Santa Catarina', 'Florienópolis', 'SC', 'Trindade'),
+	('32.320.434/0001-65', 'Instituto Federal do Paraná', 'Curitiba', 'PR', 'Guabirotuba'),
+	('32.321.434/0001-65', 'Universidade Positivo', 'Curitiba', 'PR', 'Ecoville'),
+	('82.339.210/0001-73', 'Universidade Tecnológica Federal do Paraná', 'Curitiba', 'PR', 'Ecoville'),
+	('23.342.543/0001-92', 'Colégio Bom Jesus São José', 'São Bento do Sul', 'SC', 'Centro'),
+	('39.824.887/0001-78', 'Universidade  Univille SBS', 'São Bento do Sul', 'SC', 'Colonial'),
+	('52.445.758/0001-37', 'Universidade Univille Joinville', 'Joinville', 'SC', 'Industrial Norte'),
+	('21.797.339/0001-30', 'Univali', 'Itajaí', 'SC', 'Fazenda'),
+	('47.017.145/0001-69', 'Colégio Global', 'São Bento do Sul', 'SC', 'Centro'),
+	('67.278.491/0001-08', 'Curso Positivo', 'Curitiba', 'PR', 'Batel'),
+	('03.854.285/0001-16', 'Instituto Federal de Santa Catarina', 'SC', 'Florienópolis', 'Centro'),
+	('31.784.264/0001-07', 'Universidade do Constestado', 'Mafra', 'SC', 'Centro'),
+	('31.785.264/0001-07', 'Unicesumar', 'Maringá', 'PR', 'Centro');
 
 INSERT INTO professores (cpf_professor, nome_professor, data_nascimento_professor) VALUES
 	('465.675.610-50','Maicris','1985-11-05'),
@@ -246,11 +246,33 @@ INSERT INTO estudantes_cursos(curso, cpf_estudante, nota) VALUES
     (12, '010.302.530-80', 10.0),
     (15, '011.681.300-85', 6.7),
     (13, '011.681.300-85', 2.4);
-
-
+    
+    
+CALL dados_aluno('554.972.000-01');
 
 SELECT cursos.nome_curso AS CURSO, FORMAT(AVG(nota), 2) AS NotaMediaAlunos, Min(nota) AS MenorNota, MAX(nota) AS MaiorNota
 FROM estudantes_cursos, cursos
 WHERE estudantes_cursos.curso = cursos.id_curso
 GROUP BY cursos.nome_curso
 ORDER BY cursos.nome_curso;
+
+SELECT cursos.nome_curso AS NomeCurso, COUNT(cpf_estudante) AS QuantEstudantes
+FROM cursos
+LEFT JOIN estudantes_cursos ON estudantes_cursos.curso = cursos.id_curso
+GROUP BY cursos.nome_curso
+ORDER BY cursos.nome_curso;
+
+SELECT cursos.nome_curso AS CURSO, professores.nome_professor AS Professor, moderadores.nome_moderador AS Moderador, instituicao.nome_instituicao AS NomeInstituição
+FROM cursos, moderadores, professores, instituicao
+WHERE cursos.cpf_moderador = moderadores.cpf_moderador AND
+	cursos.cpf_professor = professores.cpf_professor AND
+    cursos.cnpj_instituicao = instituicao.cnpj_instituicao
+ORDER BY cursos.nome_curso;
+
+
+SELECT modulos.nome_modulo AS NomeModulo, cursos.nome_curso AS Curso
+FROM modulos, cursos, modulos_cursos
+WHERE modulos.id_modulo = modulos_cursos.modulo AND
+		modulos_cursos.curso = cursos.id_curso
+ORDER BY modulos.nome_modulo;
+
