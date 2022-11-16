@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS cursos (
     cpf_professor VARCHAR(50) NOT NULL
 );
 
-CREATE TABLE estudante ( 
+CREATE TABLE IF NOT EXISTS estudante ( 
     cpf_estudante VARCHAR(50) PRIMARY KEY,
 	nome_estudante VARCHAR(50) NOT NULL,
     data_nascimento_estudante DATE NOT NULL
