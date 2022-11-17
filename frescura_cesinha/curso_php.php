@@ -13,7 +13,7 @@
     }else if($op == 'cancelar'){
         cancelarAluno($id_user, $id_curso, $conn);
     }else if($op == 'apagar_curso'){
-        apagarCurso($id_curso, $nome_curso, $materia_curso, $descricao_curso, $conn);
+        apagarCurso($id_curso, $conn);
     }else if($op === 'att_curso'){
         attCurso($id_curso, $nome_curso, $materia_curso, $descricao_curso, $conn);
     }
