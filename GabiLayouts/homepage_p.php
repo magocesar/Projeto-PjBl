@@ -36,7 +36,7 @@
                     <div class="b"></div>
                     <div class="c">
                         <h4>Curso</h4>
-                        <p >Professor</p>
+                        <p>Professor</p>
                         <a class="f" href="#">Click Here</a>
                     </div>
                 </div>

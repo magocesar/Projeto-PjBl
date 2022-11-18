@@ -1,3 +1,20 @@
+
+<?php
+
+if(!isset($_POST['msgServer'])){
+    $msgError = '';
+}else{
+    $msgError = $_POST['msgServer'];
+}
+
+if(!isset($_POST['msgCadastro'])){
+    $msgCadastro = '';
+}else{
+    $msgCadastro = $_POST['msgCadastro'];
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -24,19 +41,19 @@
   
   <div class="grid">
 
-    <form action="https://httpbin.org/post" method="POST" class="form login">
+    <form action="login_php.php" method="POST" class="form login" id="form">
       <div class="form__field">
         <label for="login__username"><svg class="icon">
             <use xlink:href="#icon-user"></use>
-          </svg><span class="hidden">Username</span></label>
-        <input autocomplete="username" id="login" type="text" name="username" class="form__input" placeholder="Usuario" required>
+          </svg><span class="hidden">Login</span></label>
+        <input autocomplete="username" id="login" type="text" name="login" class="form__input" placeholder="Usuario" required>
       </div>
 
       <div class="form__field">
         <label for="login__password"><svg class="icon">
             <use xlink:href="#icon-lock"></use>
-          </svg><span class="hidden">Password</span></label>
-        <input id="senha" type="password" name="password" class="form__input" placeholder="Senha" required>
+          </svg><span class="hidden">Senha</span></label>
+        <input id="senha" type="password" name="senha" class="form__input" placeholder="Senha" required>
       </div>
 
       <div class="form__field">
@@ -47,13 +64,18 @@
           Professor</span></label> 
       </div>
 
+      <div class="form_field">
+          <div style="color: red; text-align: center;"><?=$msgError?></div>
+          <div style="color: red; text-align: center;"><?=$msgCadastro?></div>
+      </div>
+
       <div class="form__field">
         <input type="submit" value="Entrar">
       </div>
 
     </form>
 
-    <p class="text--center">Não possui conta?  <a href="cadastroblack.php">Cadastre-se agora</a onclick='btnCadastrar()'> <svg class="icon">
+    <p class="text--center">Não possui conta?  <a href="cadastro.php">Cadastre-se agora</a onclick='btnCadastrar()'> <svg class="icon">
         <use xlink:href="#icon-arrow-right"></use>
       </svg></p>
 

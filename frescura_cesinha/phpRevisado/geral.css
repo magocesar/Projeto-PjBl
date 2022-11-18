@@ -1,0 +1,139 @@
+header{
+    background-color: #042331;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.titleFrAcademy{
+    height: 100%;
+    color: white;
+    align-items: center;
+    display: flex;
+    margin-left: 75px;
+}
+
+.sideImg{
+    height: 50px;
+    width: 50px;
+    filter: invert(90%);
+}
+
+nav{
+    margin-top: 75px;
+    background-color: #063146;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 175px;
+    text-align: center;
+}
+
+nav > table{
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+td{
+    padding-top: 20px;
+}
+
+.Main{
+    position: inherit;
+    display: flex;
+    padding-top: 75px;
+    padding-left:175px;
+    height: 100%;
+}
+
+.infoPag{
+    position: fixed;
+    display: flex;
+    top: 75px;
+    left: 175px;
+    padding-left: 50px;
+    background-color: #063146;
+    width: 100%;
+    color: white;
+}
+
+.containerCursos{
+    position: fixed;
+    display: flex;
+    top: 150px;
+    left: 200px;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.addCurso{
+    background-color: #d3d3d3;
+    height: 200px;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    float: left;
+}
+
+.curso{
+    background-color: #d3d3d3;
+    height: 200px;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    float: left;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.userContainer{
+    position: fixed;
+    display: flex;
+    top: 150px;
+    left: 200px;
+    width: 80%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.userDiv{
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.userImg{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.buttonUser{
+    height: 100px;
+    width: 100px;
+}
+
+.row{
+    text-align: center;
+    width: 100%;
+    display: flex;
+}

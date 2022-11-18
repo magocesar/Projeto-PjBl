@@ -1,3 +1,14 @@
+
+<?php
+
+if(!isset($_POST['msgServer'])){
+    $msgError = '';
+}else{
+    $msgError = $_POST['msgServer'];
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -20,42 +31,46 @@
 </header>
 
   <div class="grid">
-    <form action="https://httpbin.org/post" method="POST" class="form login">
+    <form action="cadastro_php.php" method="POST" class="form login">
 
       <div class="form__field">
         <label for="login__username"><svg class="icon">
             <use xlink:href="#icon-user"></use>
-          </svg><span class="hidden">Name</span></label>
-        <input autocomplete="name" id="nome" type="text" name="name" class="form__input" placeholder="Nome" required>
+          </svg><span class="hidden">Nome</span></label>
+        <input autocomplete="name" id="nome" type="text" name="nome" class="form__input" placeholder="Nome" required>
       </div>
 
       <div class="form__field">
         <label for="login__username"><svg class="icon">
             <use xlink:href="#icon-user"></use>
-          </svg><span class="hidden">Username</span></label>
-        <input autocomplete="username" id="login" type="text" name="username" class="form__input" placeholder="Usuario" required>
+          </svg><span class="hidden">Login</span></label>
+        <input autocomplete="username" id="login" type="text" name="login" class="form__input" placeholder="Usuario" required>
+      </div>
+
+      <div class="form__field">
+        <label for="login__password"><svg class="icon">
+            <use xlink:href="#icon-lock"></use>
+          </svg><span class="hidden">Senha</span></label>
+        <input id="senha1" type="password" name="senha1" class="form__input" placeholder="Senha" required>
       </div>
 
       <div class="form__field">
         <label for="login__password"><svg class="icon">
             <use xlink:href="#icon-lock"></use>
           </svg><span class="hidden">Password</span></label>
-        <input id="senha1" type="password" name="password" class="form__input" placeholder="Senha" required>
-      </div>
-
-      <div class="form__field">
-        <label for="login__password"><svg class="icon">
-            <use xlink:href="#icon-lock"></use>
-          </svg><span class="hidden">Password</span></label>
-        <input id="senha2" type="password" name="password" class="form__input" placeholder="Confirme a Senha" required>
+        <input id="senha2" type="password" name="senha2" class="form__input" placeholder="Confirme a Senha" required>
       </div>
 
       <div class="form__field">
         <label for="user_type" id="radio_box">
-          <input type="radio" value="aluno" name="type" class="form_radio" required>
+          <input type="radio" value="aluno" name="option" class="form_radio" required>
           Aluno  &emsp;&emsp;&emsp;&emsp;
-          <input type="radio" value="professor" name="type" class="form_radio">
+          <input type="radio" value="professor" name="option" class="form_radio">
           Professor 
+      </div>
+
+      <div class="form_field">
+        <div style="text-align: center; color: red;"><?=$msgError?></div>
       </div>
 
       <div class="form__field">
