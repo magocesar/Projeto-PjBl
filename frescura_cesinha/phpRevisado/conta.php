@@ -1,4 +1,12 @@
 
+<?php
+    session_start();
+
+    if(!isset($_SESSION['nome'])){
+        header("Location: login.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
@@ -18,21 +26,21 @@
         <table>
             <tr>
                 <td>
-                    <a href="#"><img src="imagens/default_user.png" class="sideImg"></a>
+                    <a href="conta.php"><img src="imagens/default_user.png" class="sideImg"></a>
                     <br>
                     Minha Conta
                 </td>
             </tr>
             <tr>
                 <td>
-                    <a href="#"><img src="imagens/pilha-de-tres-livros.png" class="sideImg"></a>
+                    <a href="homepage.php"><img src="imagens/pilha-de-tres-livros.png" class="sideImg"></a>
                     <br>
                     Meus Cursos
                 </td>
             </tr>
             <tr>
                 <td>
-                    <a href="#"><img src="imagens/lupa.png" class="sideImg"></a>
+                    <a href="areaDeBusca.php"><img src="imagens/lupa.png" class="sideImg"></a>
                     <br>
                     Cursos Disponíveis
                 </td>
@@ -45,9 +53,8 @@
             <div class="infoPag"><h2>Minha Conta</h2></div>
                 <div class="userContainer">
                     <div class="userDiv"><img src="imagens/default_user.png" class="userImg"></div>
-                    <div class="userDiv"><h3>César Willian Pacheco</h3></div>
+                    <div class="userDiv"><h3><?=$_SESSION['nome']?></h3></div>
                     <div class="userDiv">
-                        <input type="button" value="Editar Perfil">
                         <input type="button" value="Sair da Sessão">
                     </div>
                 </div>

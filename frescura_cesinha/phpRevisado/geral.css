@@ -43,7 +43,7 @@ td{
 }
 
 .Main{
-    position: inherit;
+    position: sticky;
     display: flex;
     padding-top: 75px;
     padding-left:175px;
@@ -98,8 +98,8 @@ td{
     float: left;
 }
 
-a{
-    color: black;
+a#procurarCurso{
+    color: blue;
     text-decoration: none;
 }
 
@@ -136,4 +136,36 @@ a{
     text-align: center;
     width: 100%;
     display: flex;
+}
+
+.descricaoCurso{
+    position: fixed;
+    display: flex;
+    top: 200px;
+    left: 220px;
+    width: 80%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+table#formNovoCurso{
+    position: fixed;
+    display: flex;
+    top: 150px;
+    left: 200px;
+    flex-wrap: wrap;
+    text-align: center;
+    border: 1px solid black;
+    padding: 50px;
+    background-color: #d3d3d3;
+    margin: 50px;
+}
+
+.msgServer{
+    color: red;
+    text-align: center;
+}
+
+.alignCenter{
+    text-align: center;
 }

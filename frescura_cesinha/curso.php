@@ -130,7 +130,7 @@
 
         <hr>
     </div>
-    <div class="main">
+        <div class="main">
 
         <?php
 
