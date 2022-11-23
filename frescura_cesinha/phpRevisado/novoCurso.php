@@ -77,7 +77,7 @@
                                 Descrição do Curso **:
                             </td>
                             <td>
-                                <textarea name="descricao" id="" cols="30" rows="10" placeholder="Descrição" required></textarea>
+                                <textarea name="descricao" id="" cols="30" rows="10" placeholder="Descrição" required name="descricao"></textarea>
                             </td>
                         </tr>
                         <tr>
