@@ -55,11 +55,16 @@
                     <div class="userDiv"><img src="imagens/default_user.png" class="userImg"></div>
                     <div class="userDiv"><h3><?=$_SESSION['nome']?></h3></div>
                     <div class="userDiv">
-                        <input type="button" value="Sair da Sessão">
+                        <input type="button" value="Sair da Sessão" onclick="sair()">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <script lang="Javascript">
+        function sair(){
+            window.location.assign('logout.php')
+        }
+    </script>
 </body>
 </html>

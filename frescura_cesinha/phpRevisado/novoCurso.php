@@ -1,4 +1,15 @@
 
+<?php
+    session_start();
+
+    if(!isset($_POST['msgServer'])){
+        $msgServer = '';
+    }else{
+        $msgServer = $_POST['msgServer'];
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
@@ -43,14 +54,14 @@
     <section>
         <div class="Main">
             <div class="infoPag"><h2>Novo Curso</h2></div>
-                <form action="">
+                <form action="novoCurso_php.php" method="POST">
                     <table id="formNovoCurso">
                         <tr>
                             <td>
                                 Nome do Curso **:
                             </td>
                             <td>
-                                <input type="text" placeholder="Nome:" required>
+                                <input type="text" placeholder="Nome:" required name="titulo">
                             </td>
                         </tr>
                         <tr>
@@ -58,7 +69,7 @@
                                 Matéria do Curso **:
                             </td>
                             <td>
-                                <input type="text" placeholder="Matéria" required>
+                                <input type="text" placeholder="Matéria" required name="materia">
                             </td>
                         </tr>
                         <tr>
@@ -66,7 +77,7 @@
                                 Descrição do Curso **:
                             </td>
                             <td>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Descrição" required></textarea>
+                                <textarea name="descricao" id="" cols="30" rows="10" placeholder="Descrição" required></textarea>
                             </td>
                         </tr>
                         <tr>
@@ -81,7 +92,7 @@
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <div class="msgServer">Mensagem Servidor!</div>
+                                <div class="msgServer"><?=$msgServer?></div>
                             </td>
                         </tr>
                     </table>
