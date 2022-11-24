@@ -25,7 +25,7 @@ if(!isset($_POST['msgServer'])){
 <header class ="barra">
   
   <div>
-    <h1 class="title"> FR Academy </h1>
+    <h1 class="title"></h1>
   </div>
 
 </header>

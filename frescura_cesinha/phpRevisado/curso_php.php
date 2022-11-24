@@ -1,8 +1,10 @@
 <?php
     include("conn.php");
 
-    $id_curso = $_POST['curso'];
-    $id_user = $_POST['user'];
+    session_start();
+
+    $id_curso = intval($_POST['curso']);
+    $id_user = $_SESSION['id_user'];
     $op = $_POST['op'];
     $nome_curso = $_POST['titulo'];
     $materia_curso = $_POST['materia'];
@@ -49,13 +51,14 @@
     }
 
     function attCurso($id_curso,$nome_curso, $materia_curso, $descricao_curso, $conn){
-        $sql = "UPDATE cursos SET nome_curso='$nome_curso', materia_curso='$materia_curso', descricao_curso='$descricao_curso' WHERE id_curso = $id_curso;";
+        $sql = "UPDATE cursos SET nome_curso='$nome_curso', materia_curso='$materia_curso', descricao_curso='$descricao_curso' WHERE id_curso = '$id_curso';";
         if($conn->query($sql) === TRUE){
             ?>
             <form action="editar_curso.php" method="POST" id="form">
                 <input type="hidden" value="Curso Atualizado com Sucesso!" name="msgServer">
                 <input type="hidden" value="<?$id_curso?>" name="curso">
-                <script>document.getElementById('form').submit()</script></form><?php
+                <script>document.getElementById('form').submit()</script>
+            </form><?php
         }
     }
 

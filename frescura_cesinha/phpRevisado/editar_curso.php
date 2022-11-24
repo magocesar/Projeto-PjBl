@@ -7,6 +7,14 @@
     }
 
     include('conn.php');
+
+    $id_curso = $_POST['curso'];
+
+    if(!isset($_POST['msgServer'])){
+        $msgServer = '';
+    }else{
+        $msgServer = $_POST['msgServer'];
+    }
 ?>
 
 <!DOCTYPE html>
@@ -54,9 +62,51 @@
         <div class="Main">
             <div class="infoPag"><h2>Meus Cursos</h2></div>
             <div class="containerCursos">
-            
-            
-           
+            <form action="curso_php.php" method="POST">
+                    <table id="formNovoCurso">
+                        <tr>
+                            <td>
+                                Nome do Curso **:
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Nome:" required name="titulo">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Matéria do Curso **:
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Matéria" required name="materia">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Descrição do Curso **:
+                            </td>
+                            <td>
+                                <textarea name="descricao" id="" cols="30" rows="10" placeholder="Descrição" required name="descricao"></textarea>
+                                <input type="hidden" name="op" value="att_curso">
+                                <input type="hidden" name="curso" value="<?=$id_curso?>">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                ** Campos Obrigatórios!
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="Editar Curso!" class="alignCenter">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="msgServer"><?=$msgServer?></div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
             </div>
         </div>
     </section>

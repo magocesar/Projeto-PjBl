@@ -33,7 +33,7 @@ if(!isset($_POST['msgCadastro'])){
   
 
   <div>
-    <h1 class="title"> FR Academy </h1>
+    <h1 class="title"></h1>
   </div>
 
 </header>
